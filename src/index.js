@@ -35,9 +35,8 @@ function fetchHendler(name) {
         countryListMarkUp(data);
         return;
       }
-      if ((data.length = 1)) {
+      if ((data.length === 1)) {
         clearContent();
-        countryListMarkUp(data);
         countryInfoMarkUp(data);
         return;
       }
@@ -67,4 +66,4 @@ function countryListMarkUp(data) {
 function clearContent() {
   countryListEll.innerHTML = '';
   countryInfoEll.innerHTML = '';
-}
+} 
